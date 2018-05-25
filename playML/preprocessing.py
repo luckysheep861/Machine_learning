@@ -11,7 +11,7 @@ class StandarScaler:
         self.scale_ = np.array([np.std(X[:,i]) for i in range(X.shape[1])])
         return self
 
-    def tranform(self, X):
+    def transform(self, X):
         assert self.mean_ is not None and self.scale_ is not None,\
                "must fit before transform!"
         assert X.shape[1] == len(self.mean_),\
