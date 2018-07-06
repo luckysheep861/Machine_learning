@@ -89,7 +89,7 @@ class LinearRegression:
         initial_theta = np.zeros(X_b.shape[1])
         self._theta = sgd(X_b, y_train, initial_theta, n_iters)
         self.interception_ = self._theta[0]
-        self.coef_ = self._theta[1:]
+        self.coef_= self._theta[1:]
         
         return self
         
